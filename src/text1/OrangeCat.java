@@ -1,7 +1,10 @@
 package text1;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * @author xyj
  * @create 2021-11-08 12:49
  */
 public class OrangeCat extends Cat {
@@ -14,6 +17,12 @@ public class OrangeCat extends Cat {
 
     @Override
     public String toString() {
-        return null;
+        return "喵名："+name+"\n"
+                +"喵龄："+age+"\n"
+                +"性别：" +gender+"\n"
+                +"肥喵属性："+isFat+"\n"
+                +"价格："+price+"\n";
     }
+
 }
+

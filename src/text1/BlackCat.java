@@ -1,7 +1,6 @@
 package text1;
 
 /**
- * @author xyj
  * @create 2021-11-08 12:49
  */
 public class BlackCat extends Cat{
@@ -11,6 +10,9 @@ public class BlackCat extends Cat{
 
     @Override
     public String toString() {
-        return null;
+        return "喵名："+name+"\n"
+                +"喵龄："+age+"\n"
+                +"性别："+gender+ "\n"
+                +"价格："+price+"\n";
     }
 }

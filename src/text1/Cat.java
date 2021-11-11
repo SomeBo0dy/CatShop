@@ -15,6 +15,13 @@ public abstract class Cat {
         this.gender = gender;
         this.price = price;
     }
+    public double getPrice(){
+        return price;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public abstract String toString();

@@ -2,7 +2,6 @@ package text1;
 
 /**
  * @author xyj
- * @create 2021-11-11 14:34
  */
 public class CatNotFoundException extends RuntimeException{
     public CatNotFoundException() {
