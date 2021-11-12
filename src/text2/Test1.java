@@ -1,9 +1,4 @@
 package text2;
-
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * @author xyj
  * @create 2021-11-12 13:51
