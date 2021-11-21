@@ -1,8 +1,5 @@
 package text2;
-/**
- * @author xyj
- * @create 2021-11-12 13:51
- */
+
 public class Test1 {
     public static void main(String[] args) {
         int[] arr1={1,3,5,7,9};

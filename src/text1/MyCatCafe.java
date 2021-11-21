@@ -6,9 +6,7 @@ import java.util.Random;
 
 import static java.lang.Math.abs;
 
-/**
- * @create 2021-11-08 12:51
- */
+
 public class MyCatCafe implements CatCafe{
     private double balance;//余额
     private ArrayList<Cat> cats;//存放在店里的猫猫

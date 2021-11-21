@@ -3,9 +3,7 @@ package text1;
 import java.time.LocalDate;
 import java.util.Arrays;
 
-/**
- * @create 2021-11-08 21:37
- */
+
 public class Test {
     public static void main(String[] args) {
         MyCatCafe cafe = new MyCatCafe(2000);//创业基金；

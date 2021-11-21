@@ -3,9 +3,7 @@ package text1;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
-/**
- * @create 2021-11-08 12:50
- */
+
 public class Customer {
     private String name;
     private int rua;

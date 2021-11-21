@@ -1,8 +1,6 @@
 package text1;
 
-/**
- * @author xyj
- */
+
 public class CatNotFoundException extends RuntimeException{
     public CatNotFoundException() {
         super();

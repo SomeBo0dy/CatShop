@@ -1,8 +1,6 @@
 package text1;
 
-/**
- * @create 2021-11-08 12:49
- */
+
 public abstract class Cat {
     protected String name;
     protected int age;

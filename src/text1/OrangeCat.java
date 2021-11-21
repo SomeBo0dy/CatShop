@@ -4,9 +4,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * @create 2021-11-08 12:49
- */
+
 public class OrangeCat extends Cat {
     private boolean isFat;
 

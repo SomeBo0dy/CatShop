@@ -1,8 +1,6 @@
 package text1;
 
-/**
- * @create 2021-11-11 14:34
- */
+
 public class InsufficientBalanceException extends RuntimeException{
     public InsufficientBalanceException() {
         super();
