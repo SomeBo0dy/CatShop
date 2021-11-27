@@ -1,6 +1,7 @@
 package text1;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Arrays;
 
 
@@ -15,14 +16,15 @@ public class Test {
         OrangeCat orangeCat02 = new OrangeCat("小橘2号",8,"公滴",true);
         OrangeCat orangeCat03 = new OrangeCat("小橘3号",4,"母滴",true);
 
-        Customer customer01 = new Customer("我爱橘猫",5,LocalDate.ofYearDay(2021,360));
-        Customer customer02 = new Customer("我也爱橘猫",6,LocalDate.ofYearDay(2021,360));
-        Customer customer03 = new Customer("我超爱橘猫",4,LocalDate.ofYearDay(2021,361));
-        Customer customer04 = new Customer("我爱黑猫",5,LocalDate.ofYearDay(2021,361));
-        Customer customer05 = new Customer("我也爱黑猫",10,LocalDate.ofYearDay(2021,361));
-        Customer customer06 = new Customer("我超爱黑猫",4,LocalDate.ofYearDay(2021,362));
-        Customer customer07 = new Customer("我爱黑橘猫",2,LocalDate.ofYearDay(2021,362));
-
+        Customer customer01 = new Customer("我爱橘猫",5,LocalDate.of(2021,11,11));
+        Customer customer02 = new Customer("我也爱橘猫",6,LocalDate.of(2021,11,11));
+        Customer customer03 = new Customer("我超爱橘猫",4,LocalDate.of(2021,11,12));
+        Customer customer04 = new Customer("我爱黑猫",5,LocalDate.of(2021,11,12));
+        Customer customer05 = new Customer("我也爱黑猫",10,LocalDate.of(2021,11,12));
+        Customer customer06 = new Customer("我超爱黑猫",4,LocalDate.of(2021,11,13));
+        Customer customer07 = new Customer("我爱黑橘猫",2,LocalDate.of(2021,11,13));
+        System.out.println("新的一天！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！");
+        cafe.setToday(LocalDate.of(2021,11,11));
         try{
             cafe.treat(customer01);
         }catch(CatNotFoundException c){
@@ -49,8 +51,6 @@ public class Test {
                 System.out.println(i.getMessage());
             }
         }
-        System.out.println("新的一天！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！");
-        cafe.setToday(LocalDate.ofYearDay(2021,360));
         for (Customer customer : Arrays.asList(customer01, customer02)) {
             try {
                 cafe.treat(customer);
@@ -58,9 +58,9 @@ public class Test {
                 System.out.println(i.getMessage());
             }
         }
-        System.out.println("新的一天！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！");
         cafe.close();
-        cafe.setToday(LocalDate.ofYearDay(2021,361));
+        System.out.println("新的一天！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！");
+        cafe.setToday(LocalDate.of(2021,11,12));
         for (Customer customer : Arrays.asList(customer03, customer04,customer05)) {
             try {
                 cafe.treat(customer);
@@ -70,7 +70,7 @@ public class Test {
         }
         cafe.close();
         System.out.println("新的一天！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！！");
-        cafe.setToday(LocalDate.ofYearDay(2021,362));
+        cafe.setToday(LocalDate.of(2021,11,13));
         for (Customer customer : Arrays.asList(customer06, customer07)) {
             try {
                 cafe.treat(customer);
@@ -79,6 +79,11 @@ public class Test {
             }
         }
         cafe.close();
+        System.out.println("以下是这三天的所有顾客名单：");
+        ArrayList<Customer> customers =  cafe.getCustomers();
+        for (Customer cus:customers) {
+            System.out.println(cus);
+        }
     }
 
 }

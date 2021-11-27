@@ -14,6 +14,10 @@ public class MyCatCafe implements CatCafe{
     private double income;//一天的收入
     private LocalDate today;//当天的日期
 
+    public ArrayList<Customer> getCustomers() {
+        return customers;
+    }
+
     public void setToday(LocalDate today) {
         this.today = today;
     }
