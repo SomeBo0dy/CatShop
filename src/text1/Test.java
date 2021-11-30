@@ -13,7 +13,7 @@ public class Test {
         BlackCat blackCat02 = new BlackCat("小黑2号",5,"公滴");
         BlackCat blackCat03 = new BlackCat("小黑3号",1,"母滴");
         OrangeCat orangeCat01 = new OrangeCat("小橘1号",2,"公滴",true);
-        OrangeCat orangeCat02 = new OrangeCat("小橘2号",8,"公滴",true);
+        OrangeCat orangeCat02 = new OrangeCat("小橘2号",8,"公滴",false);
         OrangeCat orangeCat03 = new OrangeCat("小橘3号",4,"母滴",true);
 
         Customer customer01 = new Customer("我爱橘猫",5,LocalDate.of(2021,11,11));
